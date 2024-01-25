@@ -1,6 +1,5 @@
-eigenfaces_fisherfaces
-Eigenfaces and Fisherfaces are two well-known techniques used in the field of computer vision and facial recognition.
+A handwritten digit classification project using deep learning and neural networks
 
 PREPARED BY: Ashenafi Chufamo Elias Abate
 
-SUBMITTED TO: D.r Beakal Gizachew
+SUBMITTED TO: D.r Fantahun Bogale
