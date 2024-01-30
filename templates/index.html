@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ml Prolject mnist AAU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body>
+    <header class="h-16 w-full bg-blue-500 flex justify-center items-center">
+        <h1 class="text-center capitalize text-white text-2xl"> Mnist digit classification using logistic regression and deep learning models</h1>
+    </header>
+    <main class="px-12 pt-20">
+        <form class="px-44" action="/predict" method="post" enctype="multipart/form-data">
+            
+          
+            
+            <label class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">Select image to upload:</label>
+            <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none h-8 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+             aria-describedby="file_input_help" name="file" id="file" type="file">
+            <p class="mt-1 text-sm text-gray-500 dark:text-gray-300" id="file_input_help">   PNG, JPG</p>
+            <input type="submit"  class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800" value="Upload Image" name="submit">
+            
+        </form>
+    </main>
+</body>
+</html>

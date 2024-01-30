@@ -1,0 +1,8 @@
+flask
+tensorflow==2.15.0
+keras
+# numpy==1.19.2
+matplotlib
+scikit-learn
+seaborn==0.11.2
+opencv-contrib-python==4.9.0.80
