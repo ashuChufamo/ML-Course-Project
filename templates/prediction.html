@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ml Prolject mnist AAU</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  
+</head>
+<body>
+    <header class="h-16 w-full bg-blue-500 flex justify-center items-center">
+        <div class="flex flex-row">
+            <a href="/">
+                <img width="40" height="40" src="{{ url_for('static', filename='icons8-back-arrow-96.png') }}" alt="" srcset="">
+            </a>
+            <h1 class="ml-28 text-center capitalize text-white text-2xl"> Mnist digit classification using logistic regression and deep learning models</h1>
+        </div>
+    </header>
+    <main class="px-12 pt-20">
+        <div class="flex flex-row w-full ">
+            <div class="w-1/2  px-12  flex-col py-12  items-center justify-center h-52"> 
+                <div>
+
+                    <h3 class="text-blue-500 text-start text-2xl capitalize"> deep net prediction is {{pred.nnPred}}</h3>
+                </div>
+                <div>
+
+                    <h3 class="text-blue-500 text-start text-2xl capitalize"> loggestic regression  prediction is {{pred.lg}}</h3>
+                </div>
+
+            </div>
+            <div class="w-1/2 pt-4 px-6   h-52">
+                <div>
+                    <img width="180px" height="180px" src="{{ url_for('static', filename=pred.filePath) }}" alt="" srcset="">
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
